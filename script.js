@@ -57,6 +57,7 @@ const predictionBox = document.getElementById("predictionBox");
 const predictionTextAr = document.getElementById("predictionTextAr");
 const predictionTextRu = document.getElementById("predictionTextRu");
 const countdown = document.getElementById("countdown");
+const greeting = document.getElementById("greeting"); // Приветствие
 
 function getRandomPrediction() {
     return predictions[Math.floor(Math.random() * predictions.length)];
@@ -97,7 +98,8 @@ btn.addEventListener("click", () => {
     predictionTextRu.innerText = storedPrediction.ru;
     predictionBox.classList.remove("hidden");
     document.body.classList.add("prediction-shown")
-    btn.style.display = "none"; // Скрываем кнопку после показа предсказания
+    btn.style.display = "none"; 
+    greeting.style.display = "none";// Скрываем кнопку после показа предсказания
     updateCountdown(endTime);
 });
 
@@ -111,6 +113,7 @@ window.onload = () => {
         predictionTextRu.innerText = storedPrediction.ru;
         predictionBox.classList.remove("hidden");
         btn.style.display = "none"; 
+        greeting.style.display = "none";
         document.body.classList.add("prediction-shown");// Кнопка сразу скрывается, если есть предсказание
         updateCountdown(endTime);
     }
