@@ -1,0 +1,77 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('ph1.jpeg') center/cover no-repeat fixed; /* Фон по умолчанию */
+    transition: background 1s ease-in-out;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    color: #ff4e50;
+    font-size: 22px;
+}
+
+button {
+    background: #ff758c;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #ff5a6e;
+}
+
+.small-btn {
+    background: #888;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#predictionBox {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #444;
+}
+
+.arabic-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: #d9534f;
+    direction: rtl;
+    text-align: center;
+}
+
+.russian-text {
+    font-size: 18px;
+    margin-top: 5px;
+    color: #444;
+}
+
+body.prediction-shown {
+    background: url("ph2.jpeg") center/cover no-repeat fixed;
+}
